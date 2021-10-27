@@ -1,48 +1,49 @@
 "use strick";
 
-let number = 8;
-// global o'zgaruvchi 
-
-function getText(text) {
-    console.log(text);
-    let number = 10;
-    console.log(number);
-    // ichki o'zgaruvchi
+let number = 5;
+//tashqi o'zgaruvchi
+function getText() {
+    console.log("Hello world");
+    number = 10;
+// ichki o'zgaruvchi 
 }
 
-getText("Hello world");
+getText();
 console.log(number);
 
-
-function calc(a, b) {
-    return a + b;
-
+function calc(x, y) {
+    return x + y;
 }
+console.log(calc(5, 56));
+console.log(calc(22, 56));
+console.log(calc(33, 56));
+console.log(calc(12, 56));
+console.log(calc(34, 56));
 
-console.log(calc(5, 10));
-console.log(calc(1, 10));
-console.log(calc(4, 10));
-console.log(calc(98, 10));
+// function declaration
 
-// funcion declaration
 function returnNumber() {
     let number = 8;
     return number;
 }
 const num = returnNumber();
-console.log(num)
+console.log(num);
 
-// funktion expression
-const funcExpr = function () {
+// function expression
+const funcExp = function() {
     console.log(10);
-};
-funcExpr();
+}
+funcExp();
 
 
-//array fucktion
+// array function
+
 const arrayFunction = (c, d) => {
     return c + d;
 }
 
-const plus = arrayFunction(10, 19);
+const plus = arrayFunction(19, 21);
 console.log(plus);
+
+
+
